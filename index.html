@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Birthday Countdown</title>
+    <title>Happy Birthday Besto</title>
 
     <!-- 
         style.css
@@ -110,7 +110,7 @@ h1 {
   <body>
     <div id="year" class="year"></div>
 
-    <h1>Birthday Countdown</h1>
+    <h1>Happpy Birthday Besto</h1>
 
     <div id="countdown" class="countdown">
       <div class="time">
@@ -151,7 +151,7 @@ const loading = document.getElementById("loading");
 
 const currentYear = new Date().getFullYear();
 
-const birthdayTime = new Date(`December 30 ${currentYear} 00:00:00`);
+const birthdayTime = new Date(`March 01 ${currentYear} 00:00:00`);
 
 const today = new Date();
 const currentDateTime = new Date(
@@ -159,7 +159,7 @@ const currentDateTime = new Date(
 );
 
 const age =
-  currentDateTime < birthdayTime ? currentYear - 1994 - 1 : currentYear - 1994;
+  currentDateTime < birthdayTime ? currentYear - 2002 - 1 : currentYear - 2002;
 
 // Set background year
 // year.innerText = `${age + 1}y`;
@@ -167,7 +167,7 @@ const age =
 // Update countdown time
 function updateCountdown() {
   const currentTime = new Date();
-  const newYearBirthday = new Date(`December 30 ${currentYear + 1} 00:00:00`);
+  const newYearBirthday = new Date(`March 01 ${currentYear + 1} 00:00:00`);
   const diff =
     birthdayTime < currentTime
       ? newYearBirthday - currentTime
